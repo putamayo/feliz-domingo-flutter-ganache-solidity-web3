@@ -1,7 +1,7 @@
 pragma solidity ^0.5.0;
 
 contract TodoList {
-    uint public taskCount;
+    uint256 public taskCount;
 
     struct Task {
         string taskName;
@@ -10,10 +10,11 @@ contract TodoList {
 
     mapping(uint256 => Task) public todos;
 
-    event TaskCreated(string task, uint taskNumber);
+    event TaskCreated(string task, uint256 taskNumber);
 
     constructor() public {
-        taskCount = 0;
+        todos[0]=Task("taak", true);
+        taskCount = 1;
     }
     function createTask(string memory _taskName) public {
 

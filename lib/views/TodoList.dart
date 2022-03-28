@@ -9,7 +9,7 @@ class TodoList extends StatelessWidget {
     var list = Provider.of<TodoListModel>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text("Web3Dart ToDo app"),
+        title: Text("Web3Dart para todos :)"),
       ),
       body: Column(
         children: [
