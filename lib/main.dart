@@ -10,7 +10,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Flutter Demo', home: TodoList());
+    return MaterialApp(title: 'Flutter Demo', home: TodoList(),
+    );
   }
 
   @override
@@ -18,29 +19,45 @@ class MyApp extends StatelessWidget {
     // TODO: implement createState
     throw UnimplementedError();
   }
-
 }
+class TodoList extends StatelessWidget {
 
-
-@override
-Widget build(BuildContext context) {
-  return Scaffold(
-    appBar: AppBar(
-      title: Text("Web3Dart ToDo app"),
-    ),
-    body: Column(
-      children: [
-        Expanded(
-          flex: 4,
-          child: ListView.builder(
-            itemCount: 10,
-            itemBuilder: (context, index) => ListTile(
-              title: Text("ToDo item #"),
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Web3Dart ToDo app"),
+      ),
+      body: Column(
+        children: [
+          Expanded(
+            flex: 4,
+            child: ListView.builder(
+              itemCount: 10,
+              itemBuilder: (context, index) =>
+                  ListTile(
+                    title: Text("ToDo item #"),
+                  ),
             ),
           ),
-        ),
-        Expanded(child: null),
-      ],
-    ),
-  );
+          Expanded(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: TextField(),
+                    flex: 5,
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text("ADD"),
+                    ),
+                  ),
+                ],
+              )),
+        ],
+      ),
+    );
+  }
 }
