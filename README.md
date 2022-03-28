@@ -2,18 +2,24 @@
  <p align="center">
 This is a flutter app I'm working on to practice and play around with solidity.
 
-➡Flutter
+<p align="center">➡Flutter</p>
 
-➡Provider
 
-➡Web3dart
+<p align="center">➡Provider</p>
 
-➡Solidity
 
-➡Truffle
+<p align="center">➡Web3dart</p>
 
-➡Ganache
+
+<p align="center">➡Solidity</p>
+
+
+<p align="center">➡Truffle</p>
+
+
+<p align="center">➡Ganache</p>
 
  
-![](photofeliz.jpg)
+
+<p align="center">![](photofeliz.jpg)
 </p>
