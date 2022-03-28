@@ -12,9 +12,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(title: 'Flutter Demo', home: TodoList());
   }
+
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
+  }
+
 }
 
-class TodoList extends StatefulWidget {}
 
 @override
 Widget build(BuildContext context) {
