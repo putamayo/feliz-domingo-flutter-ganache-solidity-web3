@@ -4,20 +4,20 @@ module.exports = {
      development: {
        host: "192.168.2.6",     // Localhost (default: none)
        port:  7545,            // Standard Ethereum port (default: none)
-       network_id: "*",       // Any network (default: none)
+       network_id: "5777",       // Any network (default: none)
      },
      advanced: {
        websockets: true,
        },
      },
   contracts_build_directory: "./src/abis/"
-  compilers: {
-    solc: {
-      optimizer: {
-        enabled: true,
-        runs: 200,
-      },
-    },
+//  compilers: {
+//    solc: {
+//      optimizer: {
+//        enabled: true,
+//        runs: 200,
+//      },
+//    },
   };
 
 
