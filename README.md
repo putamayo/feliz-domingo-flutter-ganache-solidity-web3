@@ -1,5 +1,5 @@
 # feliz-domingo-flutter-ganache-solidity-web3
- 
+ <p align="center">
 This is a flutter app I'm working on to practice and play around with solidity.
 
 ➡Flutter
@@ -16,3 +16,4 @@ This is a flutter app I'm working on to practice and play around with solidity.
 
  
 ![](photofeliz.jpg)
+</p>
