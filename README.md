@@ -2,6 +2,4 @@
  
 ![](photofeliz.jpg)
 
-Feliz domingo para todos!
-
-Feliz Domingo is a flutter app I'm working on to practice and play around with solidity.
+This is a flutter app I'm working on to practice and play around with solidity.
