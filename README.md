@@ -2,7 +2,7 @@
 
 Dear reader!  
 This is a Flutter app I'm working on to practice and play around with solidity.  
-You will 💖 the EVM :)  
+Flutter 💖 the Ethereum Virtual Machine :)  
 
 Functionalities:
 1. Store tasks in a smart contract and display them in a List ✅ done
