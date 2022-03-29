@@ -8,11 +8,12 @@ import 'package:web_socket_channel/io.dart';
 
 class TodoListModel extends ChangeNotifier {
   List<Task> todos = [];
-  final String _rpcUrl = "http://192.168.2.6:7545";//
+  bool isLoading = true;
+  final String _rpcUrl = "http://192.168.2.6:7545"; //
   final String _wsUrl = "ws://192.168.2.6:7545/";
   final String _privateKey =
       "7af2a1469558cb434c16c6348d570591181e83b9d5d8a83974d98195d9e34423";
-
+  int taskCount = 0;
   late Credentials _credentials;
   late Web3Client _client;
   var _abiGetAbiPart;
@@ -44,7 +45,6 @@ class TodoListModel extends ChangeNotifier {
     _abiGetAbiPart = jsonEncode(jsonAbi["abi"]);
     _contractAddress =
         EthereumAddress.fromHex(jsonAbi["networks"]["5777"]["address"]);
-
   }
 
   Future<void> getCredentials() async {
@@ -68,11 +68,29 @@ class TodoListModel extends ChangeNotifier {
     List totalTasksList = await _client
         .call(contract: _contract, function: _taskCount, params: []);
     BigInt totalTasks = totalTasksList[0];
+    taskCount = totalTasks.toInt();
     print(totalTasks);
     todos.clear();
     for (var i = 0; i < totalTasks.toInt(); i++) {
-      _client.call(contract: _contract, function: _todos, params: [i]);
+      var temp = await _client.call(
+          contract: _contract, function: _todos, params: [BigInt.from(i)]);
+      todos.add(Task(taskName: temp[0], isCompleted: temp[1]));
     }
+    isLoading = false;
+    notifyListeners();
+  }
+
+  addTask(String taskNameData) async {
+    isLoading = true;
+    notifyListeners();
+    await _client.sendTransaction(
+        _credentials,
+        Transaction.callContract(
+            contract: _contract,
+            function: _createTask,
+            parameters: [taskNameData])
+    );
+    getTodos();
   }
 }
 
