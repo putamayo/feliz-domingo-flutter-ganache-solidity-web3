@@ -4,10 +4,11 @@ Dear reader!
 This is a Flutter app I'm working on to practice and play around with Solidity.  
 Flutter 💖 the Ethereum Virtual Machine :)  
 
-Features
+Features:
 1. Store tasks in a smart contract and display them in a ListView ✅ done
-2. Send a task from your address to another address
-3. Trade some ETH in your wallet for a task in another wallet 
+2. Reminder of task sends a push notification to device
+3. Send a task from your address to another address
+4. Trade some ETH in your wallet for a task in another wallet 
 
 
 ➡ Flutter
