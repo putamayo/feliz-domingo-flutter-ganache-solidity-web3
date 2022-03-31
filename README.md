@@ -19,8 +19,7 @@ Flutter 💖 the **Ethereum Virtual Machine** :)
 ➡ Ganache
 
 ## Next Steps
-•Develop tasks
-   Example : photo classification
+•Develop tasks (example : photo classification)
 •Admin app
 
 
