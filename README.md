@@ -20,7 +20,7 @@ Flutter 💖 the **Ethereum Virtual Machine** :)
 
 ## Next Steps
 •Develop tasks (example : photo classification)   
-•Admin app
+•Admin app  
 •Improve UI
 
 
