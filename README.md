@@ -19,10 +19,10 @@ Flutter 💖 the **Ethereum Virtual Machine** :)
 ➡ Ganache
 
 ## Next Steps
-•Develop task (photo classification)   
+•Develop task (photo classification/gyroscope game)   
 •Admin app  
 •UI  
-•Deploy a Flutter Web version for demo
+•Deploy a Flutter Web version
 
 
 ![](photofeliz.jpg)
