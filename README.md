@@ -1,4 +1,4 @@
-# **Feliz Domingo** #Flutter #Ganache #Solidity #Web3
+# **Feliz Domingo** #Flutter #Solidity #Web3
 
 Dear reader!  
 This is a **Flutter** app I'm working on to practice and play around with **Solidity**.  
